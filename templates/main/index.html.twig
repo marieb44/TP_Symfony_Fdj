@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block main %}
+
+<div class="center">
+    <h1>Bienvenue {{ app.user ? app.user.email : '' }} sur le site FDJ-Eni !</h1>
+    {% if app.user %}
+{#       <p>Vous avez joué {{ grillesTot | length }} fois depuis la création du Loto.</p>#}
+        <p>Vous avez joué {{ nbTot }} fois depuis la création du Loto.</p>
+        <p>Vous avez joué {{ nbEnCours }} grille{{ nbEnCours > 1 ? 's' : '' }} qui {{ nbEnCours > 1 ? 'sont' : 'est' }} en attente d'un tirage.</p>
+        <p>Le montant du prochain tirage est de {{ montant | number_format(2, ',', '.') }} euros à se répartir entre les différents rangs.</p>
+    {% endif %}
+</div>
+{% endblock %}

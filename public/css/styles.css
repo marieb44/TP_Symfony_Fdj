@@ -1,0 +1,64 @@
+* {
+    font-family: Calibri;
+}
+
+body {
+  /*height: 100vh;*/
+}
+.center {
+    text-align: center;
+}
+
+.grid-page {
+    display: grid;
+    grid-template-columns: repeat(1, 100vw);
+    /*grid-gap: 10px;*/
+    margin: 0 0;
+    height: 100vh;
+}
+.flex-register {
+    display: flex;
+}
+
+/*.grid-register form div{*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(2, 50vw);*/
+/*    grid-gap: 10%;*/
+/*    margin: 0 0;*/
+/*    height: 50vh;*/
+/*}*/
+
+header {
+    padding-top: 2%;
+    margin-top: 0;
+    background-color: rosybrown;
+    font-size: 1.5rem;
+    /*height: 6%;*/
+    height: 6vh;
+    border-bottom: 1px solid black;
+}
+main {
+    background-color: antiquewhite;
+    /*height: 80%;*/
+    height: 80vh;
+}
+
+footer {
+    background-color: burlywood;
+    border-top: 1px solid black;
+    /*height: 8%;*/
+    height: 8vh;
+}
+
+form {
+    text-align: center;
+}
+header a {
+    text-decoration: none;
+    color: black;
+
+}
+header a:hover {
+    text-decoration: underline;
+    color: bisque;
+}

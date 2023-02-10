@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Jouer{% endblock %}
+
+{% block main %}
+    {{ form_start(grilleForm) }}
+    {{ form_widget(grilleForm) }}
+    <button>Jouer</button>
+    {{ form_end(grilleForm) }}
+{% endblock %}
